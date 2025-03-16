@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -11,7 +10,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[50rem] text-center leading-8 sm:mb-40 scroll-mt-28 font-poppins font-normal"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,30 +18,26 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hey there! <span className="font-bold">I'm Wajeeha Usman</span>, a multitasker by heart and a go-getter by
+        choice.
       </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3">
+        My journey into tech started with curiosity and a passion for exploring
+        beyond the usual boundaries. While pursuing my degree in <span className="font-bold">Software
+        Engineering</span>, I didn’t just stick to academics—I stepped into multiple
+        domains, from development and design to management and leadership.
+      </p>
+      <p className="mb-3">
+        Specializing in <span className="font-bold">React, Next.js, and modern web technologies</span>, I love
+        building scalable, user-friendly applications. My experience extends
+        beyond coding—I’ve also worked as a virtual assistant, a graphics lead,
+        and a management head, handling tasks efficiently while optimizing
+        workflows. Balancing tech with leadership has shaped me into someone who
+        thrives in dynamic environments.
+      </p>
+      <p className="mb-3">
+        For me, it's simple: <span className="font-bold">Follow your passion. Keep learning. Keep evolving.
+        No rules, no limits—just a drive to explore, build, and grow.</span>
       </p>
     </motion.section>
   );

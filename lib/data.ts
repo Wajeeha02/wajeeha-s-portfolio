@@ -1,10 +1,6 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import leadzenImg from "@/public/LeadZen.png";
+import nerdflowImg from "@/public/NerdFlow Website.png";
+import preplifyImg from "@/public/preplify.png";
 
 export const links = [
   {
@@ -35,52 +31,63 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "DigiSquad | Customer Experience Team",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+     "In my 3rd semester, I started working with Germany's No. 1 startup, Razor Group, with zero experience.",
+    date: "2023-Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Kalmak | Rawaan Pakistan as a Developer",
+    location: "National Incubtion Centre Taxila",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    "I worked as a content writer and a developer with the above two startups in Pakistan.",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Vice President Softdesk",
+    location: "UET taxila",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+     "I became the Vice President of the only technical society of the Software Engineering department, where I conducted multiple tech events on campus.",
+    date: "2024",
+  },
+  {
+    title: "Instructor | Technofies",
+    location: "Islamabad | Remote",
+    description:
+  "I started teaching Microsoft technologies as a Microsoft Learn Student Ambassador (Beta).",
+    date: "2024",
+  },
+  {
+    title: "Jr. Front End Developer | NerdFlow",
+    location: "NASTP Rawalpindi",
+    description:
+ "I started working as a Front-End Developer at NerdFlow, where I contributed to various projects using React and Next.js.",
+    date: "2024-Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "NerdFlow Website",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+     "I worked as a Front-End Developer on NerdFlow's official website, leveraging React and Next.js to build a seamless and user-friendly experience.",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: nerdflowImg,
   },
   {
-    title: "rmtDev",
+    title: "LeadZen",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+     "I developed my Final Year Project website, LeadZen, integrating Flask for the backend to ensure seamless data processing and connectivity.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux Toolkit","Python"],
+    imageUrl: leadzenImg,
   },
   {
-    title: "Word Analytics",
+    title: "Preplify",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+     "I built a simple front-end interface for an AI assistant interviewer, ensuring a smooth and interactive user experience.",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: preplifyImg,
   },
 ] as const;
 
@@ -94,14 +101,9 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Redux Toolkit",
   "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
 ] as const;
